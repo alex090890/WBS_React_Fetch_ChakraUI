@@ -1,0 +1,16 @@
+.pageHeader {
+    color: red;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.cardscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
