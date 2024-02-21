@@ -1,14 +1,16 @@
 import './App.css'
+import UserInfo from './UserInfo';
 import UserList from './UserList'
+import {Routes, Route } from 'react-router-dom';
 
 
 function App() {
 
   return (
-    <>
-      <h1 className='pageHeader'>User List</h1>
-      <UserList />
-    </>
+    <Routes>
+      <Route exact path="/" component={UserList} />
+      <Route path="/address/:id" component={UserInfo} />
+    </Routes>
   )
 }
 
