@@ -16,8 +16,8 @@ body {
 
 
 .chakra-card {
-  width: 500px;
-  height: 400px;
+  width: 40vw;
+  height: 25vw;
   overflow: scroll;
 }
 
