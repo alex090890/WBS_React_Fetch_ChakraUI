@@ -1,5 +1,6 @@
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 
 const UserInfo = ({ user }) => {
 
@@ -7,10 +8,13 @@ const UserInfo = ({ user }) => {
   const [address, setAddress] = useState(null);
 
   useEffect(() => {
+
     fetch(`https://jsonplaceholder.typicode.com/user?id=${id}`)
+
       .then((response) => response.json())
       .then((data) => setAddress(data.address));
   }, [id]);
+
 
   if (!user.address) {
     {/*return <p>Loading...</p>;*/}
