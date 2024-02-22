@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import axios from 'axios';
-import UserInfo from './UserInfo';
 import { Link } from 'react-router-dom';
 
 
@@ -35,8 +34,6 @@ const UserList = () => {
             <strong>Email:</strong> {user.email}<br />
             </CardBody>
             <CardFooter>
-
-                {/*<UserInfo user={user} />*/}
                 <Link to={`/address/${user.id}`}>Read more</Link>
             </CardFooter>
       </Card>
