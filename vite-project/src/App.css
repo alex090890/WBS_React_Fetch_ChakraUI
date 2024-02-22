@@ -1,14 +1,29 @@
+body {
+  margin: o;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  margin-top: o;
+}
+
+#readmore {
+  background-color: green;
+}
+
+
+.chakra-card {
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
 }
 
 
 
-
-
-
-
+.message {
+  height: 300px;
+}
 
